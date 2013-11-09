@@ -125,12 +125,12 @@ void AudioUnitPropertyChangeDispatcher(void *inRefCon, AudioUnit inUnit, AudioUn
 - (void)publishOutputAudioUnit
 {
     AudioComponentDescription desc = { kAudioUnitType_RemoteInstrument,'iasp','brio',0,0 };
-    OSStatus result = AudioOutputUnitPublish(&desc, CFSTR("CloudSynth"), 0, _audioUnitForPublishing);
+    OSStatus result = AudioOutputUnitPublish(&desc, CFSTR("interAppPDAudio"), 0, _audioUnitForPublishing);
     if (result != noErr)
         NSLog(@"AudioOutputUnitPublish instrument result: %d", (int)result);
     
     AudioComponentDescription desc2 = { kAudioUnitType_RemoteGenerator,'iasp','brio',0,0 };
-    result = AudioOutputUnitPublish(&desc2, CFSTR("CloudSynth"), 0, _audioUnitForPublishing);
+    result = AudioOutputUnitPublish(&desc2, CFSTR("interAppPDAudio"), 0, _audioUnitForPublishing);
     if (result != noErr)
         NSLog(@"AudioOutputUnitPublish generator result: %d", (int)result);
     [self setupMidiCallBacks:&_audioUnitForPublishing userData:(__bridge void *)(self)];
