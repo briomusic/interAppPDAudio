@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PdDispatcher.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <PdListener> {
+    PdDispatcher *dispatcher;
+    void *patch;
+}
+
 
 @end

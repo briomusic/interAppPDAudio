@@ -1,0 +1,36 @@
+#N canvas 354 156 822 670 10;
+#X obj 77 184 bng 15 250 50 0 empty trigger r:trigger 17 7 0 10 -262144
+-1 -1;
+#X msg 77 204 1 10 \, 0 1000 10;
+#X obj 77 242 vline~;
+#X obj 157 327 dac~;
+#X floatatom 192 22 5 0 0 0 r:midinote midinote -;
+#X obj 192 51 mtof;
+#X text 256 88 1 We need an oscillator to create a sine wave;
+#X text 229 23 2 This is where we adjust the frequency of the sine
+wave \,;
+#X text 228 48 3 This object converts note numbers to frequencies \,
+to make the numbers easier to mange;
+#X text 234 286 4 This object works like a volume control \, the left
+input controls the volume of the right input;
+#X floatatom 58 138 5 0 1 0 - - -;
+#X obj 176 292 *~;
+#X text 231 138 5 We can send our volume controller a value \, like
+1 for on and 0 for off. But that doesn't sound like a piano at all!
+;
+#X text 232 186 6 Clicking the button triggers a little envelope generator
+\, whenever it is sent a bang \, it smoothly fades throught the given
+values.;
+#X obj 192 88 osc~;
+#X text 44 365 7 You will notice that two objects have an r: followe
+by a name next to them. These are receiver objects \, our connections
+to our app! So let's head over to XCode now.;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 11 0;
+#X connect 4 0 5 0;
+#X connect 5 0 14 0;
+#X connect 10 0 2 0;
+#X connect 11 0 3 0;
+#X connect 11 0 3 1;
+#X connect 14 0 11 1;

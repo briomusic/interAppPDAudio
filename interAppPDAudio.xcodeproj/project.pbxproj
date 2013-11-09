@@ -21,6 +21,10 @@
 		2AC01E3A182EA099003FD42B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC01E1C182EA099003FD42B /* UIKit.framework */; };
 		2AC01E42182EA099003FD42B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AC01E40182EA099003FD42B /* InfoPlist.strings */; };
 		2AC01E44182EA099003FD42B /* interAppPDAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC01E43182EA099003FD42B /* interAppPDAudioTests.m */; };
+		2AC01E56182EA462003FD42B /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC01E53182EA2A8003FD42B /* libpd-ios.a */; };
+		2AC01E58182EA59A003FD42B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC01E57182EA59A003FD42B /* AVFoundation.framework */; };
+		2AC01E5A182EA5A0003FD42B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC01E59182EA5A0003FD42B /* AudioToolbox.framework */; };
+		2AC01E5E182EA7B2003FD42B /* sinepiano.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2AC01E5D182EA7B2003FD42B /* sinepiano.pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2AC01E14182EA099003FD42B;
 			remoteInfo = interAppPDAudio;
+		};
+		2AC01E52182EA2A8003FD42B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC01E4D182EA2A8003FD42B /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		2AC01E54182EA2A8003FD42B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC01E4D182EA2A8003FD42B /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		2AC01E5B182EA635003FD42B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC01E4D182EA2A8003FD42B /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +78,10 @@
 		2AC01E3F182EA099003FD42B /* interAppPDAudioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "interAppPDAudioTests-Info.plist"; sourceTree = "<group>"; };
 		2AC01E41182EA099003FD42B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AC01E43182EA099003FD42B /* interAppPDAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = interAppPDAudioTests.m; sourceTree = "<group>"; };
+		2AC01E4D182EA2A8003FD42B /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = submodules/libpd/libpd.xcodeproj; sourceTree = "<group>"; };
+		2AC01E57182EA59A003FD42B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2AC01E59182EA5A0003FD42B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2AC01E5D182EA7B2003FD42B /* sinepiano.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sinepiano.pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC01E5A182EA5A0003FD42B /* AudioToolbox.framework in Frameworks */,
+				2AC01E58182EA59A003FD42B /* AVFoundation.framework in Frameworks */,
+				2AC01E56182EA462003FD42B /* libpd-ios.a in Frameworks */,
 				2AC01E1B182EA099003FD42B /* CoreGraphics.framework in Frameworks */,
 				2AC01E1D182EA099003FD42B /* UIKit.framework in Frameworks */,
 				2AC01E19182EA099003FD42B /* Foundation.framework in Frameworks */,
@@ -101,6 +133,9 @@
 		2AC01E17182EA099003FD42B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AC01E59182EA5A0003FD42B /* AudioToolbox.framework */,
+				2AC01E57182EA59A003FD42B /* AVFoundation.framework */,
+				2AC01E4D182EA2A8003FD42B /* libpd.xcodeproj */,
 				2AC01E18182EA099003FD42B /* Foundation.framework */,
 				2AC01E1A182EA099003FD42B /* CoreGraphics.framework */,
 				2AC01E1C182EA099003FD42B /* UIKit.framework */,
@@ -126,6 +161,7 @@
 		2AC01E1F182EA099003FD42B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AC01E5D182EA7B2003FD42B /* sinepiano.pd */,
 				2AC01E20182EA099003FD42B /* interAppPDAudio-Info.plist */,
 				2AC01E21182EA099003FD42B /* InfoPlist.strings */,
 				2AC01E24182EA099003FD42B /* main.m */,
@@ -152,6 +188,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2AC01E4E182EA2A8003FD42B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AC01E53182EA2A8003FD42B /* libpd-ios.a */,
+				2AC01E55182EA2A8003FD42B /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2AC01E5C182EA635003FD42B /* PBXTargetDependency */,
 			);
 			name = interAppPDAudio;
 			productName = interAppPDAudio;
@@ -215,6 +261,12 @@
 			mainGroup = 2AC01E0C182EA099003FD42B;
 			productRefGroup = 2AC01E16182EA099003FD42B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AC01E4E182EA2A8003FD42B /* Products */;
+					ProjectRef = 2AC01E4D182EA2A8003FD42B /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2AC01E14182EA099003FD42B /* interAppPDAudio */,
@@ -223,11 +275,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		2AC01E53182EA2A8003FD42B /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 2AC01E52182EA2A8003FD42B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AC01E55182EA2A8003FD42B /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = 2AC01E54182EA2A8003FD42B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		2AC01E13182EA099003FD42B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC01E5E182EA7B2003FD42B /* sinepiano.pd in Resources */,
 				2AC01E31182EA099003FD42B /* Images.xcassets in Resources */,
 				2AC01E23182EA099003FD42B /* InfoPlist.strings in Resources */,
 				2AC01E2C182EA099003FD42B /* Main.storyboard in Resources */,
@@ -270,6 +340,11 @@
 			isa = PBXTargetDependency;
 			target = 2AC01E14182EA099003FD42B /* interAppPDAudio */;
 			targetProxy = 2AC01E3B182EA099003FD42B /* PBXContainerItemProxy */;
+		};
+		2AC01E5C182EA635003FD42B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 2AC01E5B182EA635003FD42B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -320,6 +395,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/submodules/libpd\"/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -337,6 +413,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/submodules/libpd\"/**";
 			};
 			name = Debug;
 		};
@@ -360,6 +437,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/submodules/libpd\"/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -369,6 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/submodules/libpd\"/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -376,6 +455,7 @@
 		2AC01E48182EA099003FD42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -389,6 +469,7 @@
 		2AC01E49182EA099003FD42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
