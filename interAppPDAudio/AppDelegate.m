@@ -8,19 +8,18 @@
 
 #import "AppDelegate.h"
 
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    _audioController = [[PdAudioController alloc] init];
-    if ([self.audioController configurePlaybackWithSampleRate:44100
-                                               numberChannels:2
-                                                 inputEnabled:YES
-                                                mixingEnabled:NO] != PdAudioOK) {
+    _audioController = [[CSAudioController alloc] init];
+    if ([self.audioController configureInterAppAudioWithSampleRate:44100 numberChannels:2] != PdAudioOK) {
         NSLog(@"Failed to initialize audio components");
     } else {
         NSLog(@"Did initialize audio components");
     }
+    
     [self.audioController setActive:YES];
     return YES;
 }

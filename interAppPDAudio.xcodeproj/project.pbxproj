@@ -25,6 +25,9 @@
 		2AC01E58182EA59A003FD42B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC01E57182EA59A003FD42B /* AVFoundation.framework */; };
 		2AC01E5A182EA5A0003FD42B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC01E59182EA5A0003FD42B /* AudioToolbox.framework */; };
 		2AC01E5E182EA7B2003FD42B /* sinepiano.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2AC01E5D182EA7B2003FD42B /* sinepiano.pd */; };
+		2AC01E67182EACC3003FD42B /* CSAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC01E66182EACC2003FD42B /* CSAudioController.m */; };
+		2AC01E6C182EACE1003FD42B /* CAUITransportButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC01E69182EACE1003FD42B /* CAUITransportButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2AC01E6D182EACE1003FD42B /* CAUITransportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC01E6B182EACE1003FD42B /* CAUITransportView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,12 @@
 		2AC01E57182EA59A003FD42B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2AC01E59182EA5A0003FD42B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2AC01E5D182EA7B2003FD42B /* sinepiano.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sinepiano.pd; sourceTree = "<group>"; };
+		2AC01E65182EACC2003FD42B /* CSAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAudioController.h; sourceTree = "<group>"; };
+		2AC01E66182EACC2003FD42B /* CSAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAudioController.m; sourceTree = "<group>"; };
+		2AC01E68182EACE1003FD42B /* CAUITransportButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAUITransportButton.h; sourceTree = "<group>"; };
+		2AC01E69182EACE1003FD42B /* CAUITransportButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAUITransportButton.m; sourceTree = "<group>"; };
+		2AC01E6A182EACE1003FD42B /* CAUITransportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAUITransportView.h; sourceTree = "<group>"; };
+		2AC01E6B182EACE1003FD42B /* CAUITransportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAUITransportView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +161,12 @@
 				2AC01E2A182EA099003FD42B /* Main.storyboard */,
 				2AC01E2D182EA099003FD42B /* ViewController.h */,
 				2AC01E2E182EA099003FD42B /* ViewController.m */,
+				2AC01E65182EACC2003FD42B /* CSAudioController.h */,
+				2AC01E66182EACC2003FD42B /* CSAudioController.m */,
+				2AC01E68182EACE1003FD42B /* CAUITransportButton.h */,
+				2AC01E69182EACE1003FD42B /* CAUITransportButton.m */,
+				2AC01E6A182EACE1003FD42B /* CAUITransportView.h */,
+				2AC01E6B182EACE1003FD42B /* CAUITransportView.m */,
 				2AC01E30182EA099003FD42B /* Images.xcassets */,
 				2AC01E1F182EA099003FD42B /* Supporting Files */,
 			);
@@ -321,6 +336,9 @@
 			files = (
 				2AC01E2F182EA099003FD42B /* ViewController.m in Sources */,
 				2AC01E29182EA099003FD42B /* AppDelegate.m in Sources */,
+				2AC01E67182EACC3003FD42B /* CSAudioController.m in Sources */,
+				2AC01E6C182EACE1003FD42B /* CAUITransportButton.m in Sources */,
+				2AC01E6D182EACE1003FD42B /* CAUITransportView.m in Sources */,
 				2AC01E25182EA099003FD42B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -470,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -541,6 +561,7 @@
 				2AC01E49182EA099003FD42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AC01E4A182EA099003FD42B /* Build configuration list for PBXNativeTarget "interAppPDAudioTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +570,7 @@
 				2AC01E4C182EA099003FD42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

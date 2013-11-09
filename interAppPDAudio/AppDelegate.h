@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PdAudioController.h"
+#import "CSAudioController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic, readonly) PdAudioController *audioController;
+@property (strong, nonatomic, readonly) CSAudioController *audioController;
 
 @end
