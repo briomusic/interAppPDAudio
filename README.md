@@ -1,6 +1,7 @@
 interAppPDAudio
 ===============
-#### This Project demos `CSAudioController`, which can be used to make libPd Apps compatible with Apple's inter-app audio system.  
+#### This Project demos `CSAudioController` a subclass of libPD's `PDAudioController`.  
+`CSAudioController` can be used to make libPD Apps compatible with Apple's inter-app audio system.  
 It is assumed that you are familiar with libPD and how to set up a libPD App in xCode.  
 If you are not, please refer to the book __'Making musical Apps'__ by Peter Brinkmann. 
   
