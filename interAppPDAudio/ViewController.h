@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "PdDispatcher.h"
+#import "CSAudioController.h"
 
-@interface ViewController : UIViewController <PdListener> {
+@interface ViewController : UIViewController <PdListener, CSAudioControllerMIDIDelegate> {
     PdDispatcher *dispatcher;
     void *patch;
 }
 
+@property (strong, nonatomic, readonly) CSAudioController *audioController;
 
 @end
