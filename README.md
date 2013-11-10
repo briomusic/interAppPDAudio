@@ -10,5 +10,6 @@ The InterAppAudioHost from this Suite is necessary to try all aspects of inter-A
 
 ####Project setup:
 * clone this repository  
-* initialise and update git submodules  
+* in Terminal, navigate to 'submodules' folder  
+* run 'git submodule init' and 'git submodule update'
 
