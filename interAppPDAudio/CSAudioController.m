@@ -70,7 +70,7 @@ void AudioUnitPropertyChangeDispatcher(void *inRefCon, AudioUnit inUnit, AudioUn
     };
     
     if (![session setPreferredOutputNumberOfChannels:numChannels error:&err]) {
-        NSLog(@"unable to activate AVAudioSession:%@", err.localizedDescription);
+        NSLog(@"unable to set preferred Output Number Of Channels:%@", err.localizedDescription);
         status = PdAudioPropertyChanged;
     }
     
@@ -104,13 +104,6 @@ void AudioUnitPropertyChangeDispatcher(void *inRefCon, AudioUnit inUnit, AudioUn
     [self addAudioUnitPropertyListener];
     
     _audioUnitForPublishing = outputUnit;
-    
-    /*
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-    {
-        [self publishOutputAudioUnit:(outputUnit)];
-    }
-     */
     
     //If media services get reset republish output node
     [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionMediaServicesWereResetNotification
