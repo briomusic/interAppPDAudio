@@ -1,6 +1,6 @@
 interAppPDAudio
 ===============
-#### This Project demos the CSAudioController, which can be used to make libPd Apps compatible with Apple's inter-app audio system.  
+#### This Project demos `CSAudioController`, which can be used to make libPd Apps compatible with Apple's inter-app audio system.  
 It is assumed that you are familiar with libPD and how to set up a libPD App in xCode.  
 If you are not, please refer to the book __'Making musical Apps'__ by Peter Brinkmann. 
   
@@ -12,9 +12,9 @@ The InterAppAudioHost from this Suite is necessary to try all aspects of inter-A
 * clone this repository  
 * in Terminal, navigate to 'submodules' folder  
 * run 'git submodule init' and 'git submodule update'
-* open the project in xcode and open the file 'PDAudioController.m'
-* CUT the line '@property (nonatomic, retain) PdAudioUnit *audioUnit;	// out private PdAudioUni'  
-* PASTE this line into 'PDAudioController.h' somewhere near the other properties.  
+* open the project in xcode and open `PDAudioController.m`  
+* CUT the line `@property (nonatomic, retain) PdAudioUnit *audioUnit;	// out private PdAudioUnit`  
+* PASTE this line into `PDAudioController.h` somewhere near the other properties.  
 * this makes the audioUnit property public and visible to our subclass  
 * (I know this is an ugly way of doing it, recommendations welcome)  
 * The Project should build and run now.  
@@ -38,5 +38,4 @@ The InterAppAudioHost from this Suite is necessary to try all aspects of inter-A
 * The transport counter doesn't move. Some bug in one of the C methods, will figure it out later.  
 * If the interAppPDAudio was not running while being launched by the host, there is no audio. will figure this one out later too.  
 
-#####Feel free to check out my own libPD interApp audio project CloudSynth!  
-* 
+###Feel free to check out my own libPD interApp audio project [CloudSynth](http://bit.ly/WVmkKi)!    
