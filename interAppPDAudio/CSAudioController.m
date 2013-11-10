@@ -117,12 +117,12 @@ void AudioUnitPropertyChangeDispatcher(void *inRefCon, AudioUnit inUnit, AudioUn
 
 - (void)publishOutputAudioUnit
 {
-    AudioComponentDescription desc = { kAudioUnitType_RemoteInstrument,'iasp','brio',0,0 };
+    AudioComponentDescription desc = { kAudioUnitType_RemoteInstrument,'iasp','none',0,0 };
     OSStatus result = AudioOutputUnitPublish(&desc, CFSTR("interAppPDAudio"), 0, _audioUnitForPublishing);
     if (result != noErr)
         NSLog(@"AudioOutputUnitPublish instrument result: %d", (int)result);
     
-    AudioComponentDescription desc2 = { kAudioUnitType_RemoteGenerator,'iasp','brio',0,0 };
+    AudioComponentDescription desc2 = { kAudioUnitType_RemoteGenerator,'iasp','none',0,0 };
     result = AudioOutputUnitPublish(&desc2, CFSTR("interAppPDAudio"), 0, _audioUnitForPublishing);
     if (result != noErr)
         NSLog(@"AudioOutputUnitPublish generator result: %d", (int)result);
