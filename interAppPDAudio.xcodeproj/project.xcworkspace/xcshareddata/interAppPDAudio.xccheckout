@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>07D07061-ADD4-47BE-9BD6-744DCF9AE445</string>
+	<key>IDESourceControlProjectName</key>
+	<string>interAppPDAudio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>53C4246E-68C5-4646-9589-9A83BDB62CB4</key>
+		<string>git://github.com/libpd/libpd.git</string>
+		<key>E78F6777-E262-408C-9E67-6D25F4FB7130</key>
+		<string>ssh://github.com/briomusic/interAppPDAudio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>interAppPDAudio.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>53C4246E-68C5-4646-9589-9A83BDB62CB4</key>
+		<string>../../submodules/libpd</string>
+		<key>E78F6777-E262-408C-9E67-6D25F4FB7130</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/briomusic/interAppPDAudio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E78F6777-E262-408C-9E67-6D25F4FB7130</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E78F6777-E262-408C-9E67-6D25F4FB7130</string>
+			<key>IDESourceControlWCCName</key>
+			<string>interAppPDAudio</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>53C4246E-68C5-4646-9589-9A83BDB62CB4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libpd</string>
+		</dict>
+	</array>
+</dict>
+</plist>
