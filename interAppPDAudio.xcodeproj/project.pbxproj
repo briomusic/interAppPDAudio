@@ -157,7 +157,6 @@
 		2AC01E1E182EA099003FD42B /* interAppPDAudio */ = {
 			isa = PBXGroup;
 			children = (
-				2A9B49B8182F85D000E9839B /* interAppPDAudio.entitlements */,
 				2AC01E27182EA099003FD42B /* AppDelegate.h */,
 				2AC01E28182EA099003FD42B /* AppDelegate.m */,
 				2AC01E2A182EA099003FD42B /* Main.storyboard */,
@@ -179,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				2AC01E5D182EA7B2003FD42B /* sinepiano.pd */,
+				2A9B49B8182F85D000E9839B /* interAppPDAudio.entitlements */,
 				2AC01E20182EA099003FD42B /* interAppPDAudio-Info.plist */,
 				2AC01E21182EA099003FD42B /* InfoPlist.strings */,
 				2AC01E24182EA099003FD42B /* main.m */,
@@ -491,6 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = interAppPDAudio/interAppPDAudio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "interAppPDAudio/interAppPDAudio-Prefix.pch";
 				INFOPLIST_FILE = "interAppPDAudio/interAppPDAudio-Info.plist";
@@ -508,6 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = interAppPDAudio/interAppPDAudio.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "interAppPDAudio/interAppPDAudio-Prefix.pch";
 				INFOPLIST_FILE = "interAppPDAudio/interAppPDAudio-Info.plist";
